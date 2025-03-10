@@ -1,2 +1,2 @@
 # CASpi
-Public repo for Sensor Design final project (AE499)
+Public repo for Senior Project Class (AE460)
