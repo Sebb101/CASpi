@@ -17,8 +17,12 @@ from queue import Queue
 import datetime
 
 
-HOST = '10.40.6.128' # Enter IP or Hostname of your server
-PORT = 12345 # Pick an open Port (1000+ recommended), must match the server port
+#HOST = '10.40.6.128' # Enter IP or Hostname of your server
+#PORT = 12345 # Pick an open Port (1000+ recommended), must match the server port
+
+#HOST = '169.254.170.79'
+HOST = '10.40.10.227'
+PORT = 12345
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 class Ui(QtWidgets.QMainWindow):
@@ -29,7 +33,7 @@ class Ui(QtWidgets.QMainWindow):
         self.show() # Show the GUI
 
         # Initial Values
-        self.command = "B"
+        self.command = "N"
         self.motor_speed = 0
         self.switchButtonStates(False)
 
